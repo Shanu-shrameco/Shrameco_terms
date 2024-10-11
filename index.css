@@ -1,104 +1,119 @@
-/* Base Styles */
-* {
+/* Base styling for the page */
+body {
+  font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 900px;
-  margin: 50px auto;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-}
-
-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-header h1 {
-  font-size: 36px;
-  color: #333;
-}
-
-.content h2 {
-  font-size: 24px;
-  color: #007bff;
-  margin-top: 20px;
-}
-
-.content p {
-  font-size: 16px;
-  margin: 10px 0;
-  color: #666;
-}
-
-footer {
-  text-align: center;
   margin-top: 40px;
-  padding: 10px 0;
-  border-top: 1px solid #ddd;
 }
 
-footer p {
-  font-size: 14px;
-  color: #aaa;
+/* Headings */
+h1 {
+  color: #1d4ed8;
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+  border-bottom: 2px solid #1d4ed8;
+  padding-bottom: 10px;
 }
 
-/* Tablet Styles */
-@media (max-width: 768px) {
+h2 {
+  color: #333;
+  font-size: 1.8em;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-left: 5px solid #1d4ed8;
+  padding-left: 10px;
+}
+
+/* Paragraphs and lists */
+p,
+ul {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
   .container {
     padding: 15px;
-    margin: 30px 20px;
+    margin-top: 20px;
   }
 
-  header h1 {
-    font-size: 30px;
+  h1 {
+    font-size: 2em;
   }
 
-  .content h2 {
-    font-size: 22px;
+  h2 {
+    font-size: 1.5em;
   }
 
-  .content p {
-    font-size: 15px;
-  }
-
-  footer p {
-    font-size: 13px;
+  p,
+  ul {
+    font-size: 1em;
   }
 }
 
-/* Mobile Styles */
-@media (max-width: 480px) {
+/* Tablet Responsiveness */
+@media only screen and (max-width: 1024px) {
   .container {
-    padding: 10px;
-    margin: 20px auto;
+    padding: 20px;
   }
 
-  header h1 {
-    font-size: 26px;
+  h1 {
+    font-size: 2.2em;
   }
 
-  .content h2 {
-    font-size: 20px;
+  h2 {
+    font-size: 1.7em;
   }
 
-  .content p {
-    font-size: 14px;
+  p,
+  ul {
+    font-size: 1.05em;
   }
+}
 
-  footer p {
-    font-size: 12px;
-  }
+/* General Styling for Buttons (if needed) */
+button {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }
